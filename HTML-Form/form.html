@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #d9a1cf;
+            margin: 0;
+            padding: 0;
+        }
+
+        .form-container {
+            width: 70%;
+            margin: 50px auto;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            background-color: #ffffff;
+            text-align: left;
+        }
+
+        h1 {
+            text-align: center;
+            color: #e63946;
+        }
+
+        label {
+            color: #1d3557;
+            font-weight: bold;
+            display: inline-block;
+            width: 120px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="color"],
+        input[type="date"],
+        input[type="time"],
+        input[type="number"],
+        input[type="range"],
+        input[type="file"],
+        textarea,
+        select {
+            padding: 8px;
+            margin: 5px 0;
+            width: 60%;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-left: 10px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #1d3557;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px 5px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #457b9d;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <form action="#" method="post">
+            <h1>HTML Form: All Element List</h1>
+            <hr>
+
+            <div class="form-group">
+                <label for="name">First Name:</label>
+                <input type="text" name="fname" maxlength="10" minlength="2" placeholder="Enter Your Name.." required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="name" placeholder="Enter Email ID.." required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" name="password" placeholder="Enter Your Password.." required>
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" name="grmder" value="male" checked> Male
+                <input type="radio" name="grmder" value="female"> Female
+            </div>
+
+            <div class="form-group">
+                <label>Hobby:</label>
+                <input type="checkbox" name="hobby" value="reading" checked> Reading
+                <input type="checkbox" name="hobby" value="dancing"> Dancing
+                <input type="checkbox" name="hobby" value="drawing"> Drawing
+                <input type="checkbox" name="hobby" value="cricket"> Cricket
+            </div>
+
+            <div class="form-group">
+                <label>Button:</label>
+                <input type="button" name="button" value="Click Now">
+            </div>
+
+            <div class="form-group">
+                <label>Color:</label>
+                <input type="color" name="color" value="#f542f5">
+            </div>
+
+            <div class="form-group">
+                <label>Date:</label>
+                <input type="date" name="date">
+            </div>
+
+            <div class="form-group">
+                <label>Time:</label>
+                <input type="time" name="time">
+            </div>
+
+            <div class="form-group">
+                <label>Number:</label>
+                <input type="number" name="number" min="2" max="10">
+            </div>
+
+            <div class="form-group">
+                <label>Range:</label>
+                <input type="range" name="range" min="2" max="10" step="2">
+            </div>
+
+            <div class="form-group">
+                <label>File:</label>
+                <input type="file" name="file">
+            </div>
+
+            <div class="form-group">
+                <label>City:</label>
+                <select name="city" id="city">
+                    <option value="Surat">Surat</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Vadodara">Vadodara</option>
+                    <option value="Amreli">Amreli</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Address:</label>
+                <textarea name="address" placeholder="Enter Your Address....." cols="50" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" name="submit" value="Submit">
+                <input type="reset" name="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
